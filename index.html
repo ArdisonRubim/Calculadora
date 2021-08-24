@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- Title -->
+    <title>Calculadora</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Css customizado -->
+    <link rel="stylesheet" type="text/css" href="estilo/caculadoraEstilo.css">
+    <!-- Normalize -->
+    <link rel="stylesheet" type="text/css" href="./estilo/normalize.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    I
+</head>
+
+<body id="body_cal">
+
+    <div class="container">
+        <div class="row">
+            <div class="d-flex col">
+                <div id="calculadora_id">
+                    <!-- Visor da cauculadora -->
+                    <input id="visor" type="text" placeholder="0" disabled>
+                    <!-- Botões -->
+                    <div class="row">
+                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">7</button>
+                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">8</button>
+                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">9</button>
+                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">/</button>
+                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">-</button>
+                    </div>
+
+                    <div class="row">
+                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">4</button>
+                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">5</button>
+                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">6</button>
+                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">x</button>
+                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">+</button>
+
+                    </div>
+
+                    <div class="row">
+                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">1</button>
+                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">2</button>
+                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">3</button>
+                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">,</button>
+                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">x<sup>2</sup></button>
+                    </div>
+                    <div class="row">
+                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">0</button>
+                        <button onclick="calculo()" type="button" class="btn btn-danger btn-lg font-weight-light">c</button>
+                        <button onclick="calculo()" type="button" class="btn btn-success btn-lg font-weight-light">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./js/calculadoraScript.js"></script>
+</body>
+
+</html>

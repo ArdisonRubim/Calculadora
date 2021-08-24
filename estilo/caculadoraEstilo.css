@@ -1,0 +1,12 @@
+/* Estilizando calculadora */
+#body_cal {
+    background-color: #CDE6B5;
+}
+
+#calculadora_id {
+    background-color: #DEEDCA;
+}
+
+#visor {
+    background-color: #ECF0D3;
+}
