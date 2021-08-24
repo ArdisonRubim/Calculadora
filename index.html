@@ -22,10 +22,10 @@
 
     <div class="container">
         <div class="row">
-            <div class="d-flex col">
+            <div class="d-flex col justify-content-center">
                 <div id="calculadora_id">
                     <!-- Visor da cauculadora -->
-                    <input id="visor" type="text" placeholder="0" disabled>
+                    <div class="row"><input id="visor" class="form-control" type="text" placeholder="0" disabled></div>
                     <!-- Botões -->
                     <div class="row">
                         <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">7</button>
@@ -52,9 +52,9 @@
                         <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">x<sup>2</sup></button>
                     </div>
                     <div class="row">
-                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">0</button>
-                        <button onclick="calculo()" type="button" class="btn btn-danger btn-lg font-weight-light">c</button>
-                        <button onclick="calculo()" type="button" class="btn btn-success btn-lg font-weight-light">=</button>
+                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg zero font-weight-light">0</button>
+                        <button onclick="calculo()" type="button" class="btn btn-danger btn-lg clear font-weight-light">c</button>
+                        <button onclick="calculo()" type="button" class="btn btn-success btn-lg resultado font-weight-light">=</button>
                     </div>
                 </div>
             </div>
