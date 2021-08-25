@@ -24,37 +24,38 @@
         <div class="row">
             <div class="d-flex col justify-content-center">
                 <div id="calculadora_id">
-                    <!-- Visor da cauculadora -->
+                    <!-- Visor da calculadora -->
                     <div class="row"><input id="visor" class="form-control" type="text" placeholder="0" disabled></div>
                     <!-- Botões -->
                     <div class="row">
-                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">7</button>
-                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">8</button>
-                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">9</button>
-                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">/</button>
-                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">-</button>
+                        <button onclick="calculo('valor', 7)" type="button" class="btn btn-light btn-lg font-weight-light">7</button>
+                        <button onclick="calculo('valor', 8)" type="button" class="btn btn-light btn-lg font-weight-light">8</button>
+                        <button onclick="calculo('valor', 9)" type="button" class="btn btn-light btn-lg font-weight-light">9</button>
+                        <button onclick="calculo('acao', '/')" type="button" class="btn btn-light btn-lg font-weight-light">/</button>
+                        <button onclick="calculo('acao', '-')" type="button" class="btn btn-light btn-lg font-weight-light">-</button>
                     </div>
 
                     <div class="row">
-                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">4</button>
-                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">5</button>
-                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">6</button>
-                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">x</button>
-                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">+</button>
+                        <button onclick="calculo('valor', 4)" type="button" class="btn btn-light btn-lg font-weight-light">4</button>
+                        <button onclick="calculo('valor', 5)" type="button" class="btn btn-light btn-lg font-weight-light">5</button>
+                        <button onclick="calculo('valor', 6)" type="button" class="btn btn-light btn-lg font-weight-light">6</button>
+                        <button onclick="calculo('acao', '*')" type="button" class="btn btn-light btn-lg font-weight-light">x</button>
+                        <button onclick="calculo('acao', '+')" type="button" class="btn btn-light btn-lg font-weight-light">+</button>
 
                     </div>
 
                     <div class="row">
-                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">1</button>
-                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">2</button>
-                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">3</button>
-                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">,</button>
-                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg font-weight-light">x<sup>2</sup></button>
+                        <button onclick="calculo('valor', 1)" type="button" class="btn btn-light btn-lg font-weight-light">1</button>
+                        <button onclick="calculo('valor', 2)" type="button" class="btn btn-light btn-lg font-weight-light">2</button>
+                        <button onclick="calculo('valor', 3)" type="button" class="btn btn-light btn-lg font-weight-light">3</button>
+                        <button onclick="calculo('acao', '.')" type="button" class="btn btn-light btn-lg font-weight-light">.</button>
+                        <button onclick="calculo('acao', '^2')" type="button" class="btn btn-light btn-lg font-weight-light">x<sup>2</sup></button>
                     </div>
+
                     <div class="row">
-                        <button onclick="calculo()" type="button" class="btn btn-light btn-lg zero font-weight-light">0</button>
-                        <button onclick="calculo()" type="button" class="btn btn-danger btn-lg clear font-weight-light">c</button>
-                        <button onclick="calculo()" type="button" class="btn btn-success btn-lg resultado font-weight-light">=</button>
+                        <button onclick="calculo('valor', 0)" type="button" class="btn btn-light btn-lg zero font-weight-light">0</button>
+                        <button onclick="calculo('acao', 'c')" type="button" class="btn btn-danger btn-lg clear font-weight-light">c</button>
+                        <button onclick="calculo('acao', '=')" type="button" class="btn btn-success btn-lg resultado font-weight-light">=</button>
                     </div>
                 </div>
             </div>
